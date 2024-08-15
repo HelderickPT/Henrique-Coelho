@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabelas</title>
+</head>
+<body>
+    <!-- Criando Tabela -->
+    <table border="1" width="800">
+        <!--Usado para criar linha na tabela  -->
+        <tr>
+            <!-- Criar o Titulo da Tabela  -->
+            <th>Titulo 1</th>
+            <th>Titulo 2</th>
+            <th>Titulo 3</th>
+        </tr>
+        <tr>
+            <!-- Criar Colunas  -->
+            <td>Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+        </tr>
+        <tr>
+            <td>Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+        </tr>
+        <tr>
+            <!-- Colspan serve para mesclar colunas e o valor é o numero de celular a mesclar -->
+            <td colspan="3" align="center">Coluna 01</td>
+           
+        </tr>
+        <tr>
+            <td>Coluna 1</td>
+            <td colspan="2" align="center">Coluna 02 e 03</td>
+           
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Coluna 01 e 02</td>
+            <td>Coluna 3</td>    
+        </tr>
+    </table>
+
+
+
+    <br><br><br><br>
+
+
+    <table border="1" width="800">
+        <tr>
+            <th>Titulo 01</th>
+            <th>Titulo 02</th>
+            <th>Titulo 03</th>
+            <th>Titulo 04</th>
+            
+        </tr>
+        <tr>
+            <!-- Rowspan mescla linhas -->
+            <td rowspan="2">Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <td>Coluna 04</td>
+        </tr>
+        <tr>            
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <td rowspan="2">Coluna 04</td>
+        </tr>
+        <tr>            
+            <td>Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+        </tr>
+    </table>
+    
+
+<br><br><br>
+
+
+    <h2 align="center">Exercicio Tabela</h2>
+    <table border="1" width="800">
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>        
+        </tr>
+
+
+        <tr>
+            <td align="center">1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td></td>
+            <td rowspan="2"></td>            
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td></td>            
+            <td></td>
+            <td rowspan="2" colspan="2" ></td>               
+            </tr>
+        <tr id="4">
+            <td align="center">4</td>
+            <td></td>
+            <td></td>
+            <td></td>      
+        </tr>
+        <tr>
+            <td align="center">5</td>
+            <td colspan="2"></td>            
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td align="center">6</td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>            
+            <td></td>
+        </tr>
+        <tr>
+            <td align="center">7</td>            
+            <td></td>
+            <td></td>         
+        </tr>
+        
+
+    </table>
+</body>
+</html>
