@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-</style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body{
     margin: 0;
     padding: 0;
@@ -65,11 +65,34 @@ body{
     color: white;
     transition: 0.2s ease-in-out;
 }
+
 .banner{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 400px;   
+    background: url('../Imagens/imagem\ para\ banner.jpg');
+    background-position: center;
+    background-size: cover; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
     
+}
+.banner h1 {
+    font-family: "Moderustic", system-ui ;
+    font-size: 65px;
+    color: white; 
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    20% {opacity: 100%;}
+    80% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+.animated-title {
+    font-size: 3em;
+    animation: fadeIn 10s ease-in-out infinite; 
 }
 .conteudo {
     position: relative;
@@ -105,13 +128,13 @@ body{
 
 .box img {
     width: 100%;
-    height: auto;
+    height:auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px ;
-    box-shadow:0px 5px 10px
-      
+    box-shadow:0px 5px 10px     
     
 }
+
 
 .box h2, .box p {
     padding: 10px;
@@ -138,5 +161,49 @@ body{
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: antiquewhite;
+    background-color:#232B33
+}
+
+.rodape-coluna {
+    position: relative;
+    width: 33%;
+    height: auto;
+    float: left;
+
+}
+.rodape-coluna img {
+    margin-left: 40px;
+    margin-top: 40px;
+    
+
+}
+.rodape-coluna ul {
+    list-style: none;
+    padding-left: 0;
+    
+}
+.rodape-coluna ul li a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+.lista-rodape li  {
+    margin-bottom: 10px;
+    color: white;
+    
+}
+.lista-rodape {
+    margin-top: 20px;
+    align-items: center;
+}
+.lista-icones li{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+    
+}
+.rodape-coluna li a:hover {
+    color: #8198af;
 }
